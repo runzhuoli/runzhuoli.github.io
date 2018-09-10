@@ -86,7 +86,7 @@ mathjax: true # false (default), true
 mathjax_autoNumber: false # false (default), true
 
 ## Mermaid
-mermaid: # false (default), true
+mermaid: true # false (default), true
 
 ## Chart
 chart: # false (default), true
@@ -117,7 +117,7 @@ comments:
   gitalk:
     clientID    : ccba57d816ea522224ec # GitHub Application Client ID
     clientSecret: 84d07abb1e7f85b45f05e5e157ea8e7624c714ec # GitHub Application Client Secret
-    repository  : runzhuoli/runzhuoli.github.io # GitHub repo
+    repository  : runzhuoli.github.io # GitHub repo
     owner       : runzhuoli # GitHub repo owner
     admin: runzhuoli # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
       # - your GitHub Id
