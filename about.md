@@ -1,11 +1,11 @@
 ---
 layout: article
+comment: false
 titles:
   en: About Me
   zh: 关于我
   zh-Hans: 关于我
   zh-Hant: 關於我
-key: page-about
 ---
 A software engineer, who are dreaming to make a small change to the world.   
 
@@ -16,6 +16,9 @@ A software engineer, who are dreaming to make a small change to the world.
 - BS in Computer Science - [South China University of Technology](http://en.scut.edu.cn/){:target="_blank"}
 
 ### Work
+My professional experiences includes multiple software development positions have in healthcare, retail, finance in industries. Please refer to my [Linkedin](https://www.linkedin.com/in/rz-li/){:target="_blank"} page for my work history. 
+
+Currently, I am interested in architecting, algorithm, data structure, mvp design and technical start ups. 
 
 ### Projects
 
