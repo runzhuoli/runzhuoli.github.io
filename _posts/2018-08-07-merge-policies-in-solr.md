@@ -4,7 +4,7 @@ key: 20180807
 tags: Algorithm Solr
 ---
 
-I happened to get an chance to optimize the Solr configuration of [Home Depot Canada](https://www.homedepot.ca){:target="_blank"}. My mainly improvement is focused on the segments merge policies. However there are limited resources on-line, I spent some time looking into the source code of [LogMergePolicy](https://github.com/apache/lucene-solr/blob/master/lucene/core/src/java/org/apache/lucene/index/LogByteSizeMergePolicy.java){:target="_blank"} and [TieredMergePolicy](https://github.com/apache/lucene-solr/blob/master/lucene/core/src/java/org/apache/lucene/index/TieredMergePolicy.java){:target="_blank"}. I am going to share how does these two mostly used Solr merge polices work and my findings with you.
+I happened to get an chance to optimize the Solr configuration of [Home Depot Canada](https://www.homedepot.ca){:target="_blank"}. My mainly improvement is focused on the segments merge policies. However there are limited resources on-line, I spent some time looking into the source code of [LogMergePolicy](https://github.com/apache/lucene-solr/blob/master/lucene/core/src/java/org/apache/lucene/index/LogByteSizeMergePolicy.java){:target="_blank"} and [TieredMergePolicy](https://github.com/apache/lucene-solr/blob/master/lucene/core/src/java/org/apache/lucene/index/TieredMergePolicy.java){:target="_blank"}. I am going to share how does these two mostly used Solr merge polices work and my findings.
 
 <!--more-->
 In these two algorithms, both would not merge segment which is being merged (By default, using ConcurrentMergeScheduler, Solr executes each merge in a separate thread).  
@@ -68,7 +68,7 @@ The number of merge-able segment is N; Size in MB (exclude deletion documents) o
 
 ### Conclusion:
 
-TeiredMerge Algorithm tries to find the best merge combinations based on several factors(segment sizes, balance, deletion rate). However, LogMerge Algorithm merges segments based on created time stamp only. The sizes of merged segments in LogMerge are unpredictable. Solr started to use TeiredMerge algorithm as the default algorithm after it introduced. Based on Michael McCandless, the author of "Lucene in Action":  To minimize merge cost, you ideally would merge only equal-sized segments, and merge a larger number of segments at a time. When I tried to solve the real problem, I tried to produce equal-sized segments by using "Auto Commit" and I set maxMergeAtOnce to a bigger number to make sure more documents are merged at a time. Moreover, I controlled allowed segments amount(maximum budget) to a smaller number by setting segmentPerTeir to a lower value.
+TeiredMerge Algorithm tries to find the best merge combinations based on several factors(segment sizes, balance, deletion rate). However, LogMerge Algorithm merges segments based on created time stamp only. The sizes of merged segments in LogMerge are unpredictable. Solr started to use TeiredMerge algorithm as the default algorithm after it introduced. Based on Michael McCandless, the author of "Lucene in Action":  To minimize merge cost, we ideally would merge only equal-sized segments, and merge a larger number of segments at a time. When I tried to solve the real problem, I tried to produce equal-sized segments by using "Auto Commit" and I set maxMergeAtOnce to a bigger number to make sure more documents are merged at a time. Moreover, I controlled allowed segments amount(maximum budget) to a smaller number by setting segmentPerTeir to a lower value.
 
 ### References:
 

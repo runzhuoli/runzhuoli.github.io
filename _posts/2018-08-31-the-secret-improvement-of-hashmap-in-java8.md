@@ -24,7 +24,7 @@ These constraints enforce a critical property of red–black trees: the path fro
 
 This property guarantees log based time complexity of operations in red-black tree. The time complexities of Search, Insertion, Deletion are all $$O(log\,n)$$ 
 
-You could refer resources about [insertion](https://www.geeksforgeeks.org/red-black-tree-set-2-insert/){:target="_blank"} and [deletion](https://www.geeksforgeeks.org/red-black-tree-set-3-delete-2/){:target="blank"} in Red-black tree here.
+Resources about [insertion](https://www.geeksforgeeks.org/red-black-tree-set-2-insert/){:target="_blank"} and [deletion](https://www.geeksforgeeks.org/red-black-tree-set-3-delete-2/){:target="blank"} in Red-black tree can be referred here.
 
 ### Treeify in HashMap
 

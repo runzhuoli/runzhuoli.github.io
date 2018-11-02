@@ -34,7 +34,7 @@ static int countInversions(int[] array)
 ```
 ### Solution 2
 
-To improve an $$O(n^2)$$ algorithm, the next better time complexity usually is $$O(n\,log\,n)$$. In most cases, $$O(n\,log\,n)$$ is achieved by using a tree structure. Divide and conquer may be the methodology which comes to your mind first, as it divides a big problem into multiple sub small problems recursively. Recursion is a tree structured approach and we can get the time complexity of a recursion method by drawing the [recursion tree](https://courses.csail.mit.edu/6.006/spring11/rec/rec08.pdf){:target="_blank"}. 
+To improve an $$O(n^2)$$ algorithm, the next better time complexity usually is $$O(n\,log\,n)$$. In most cases, $$O(n\,log\,n)$$ is achieved by using a tree structure. Divide and conquer may be the methodology which comes to our mind first, as it divides a big problem into multiple sub small problems recursively. Recursion is a tree structured approach and we can get the time complexity of a recursion method by drawing the [recursion tree](https://courses.csail.mit.edu/6.006/spring11/rec/rec08.pdf){:target="_blank"}. 
 
 Let's try to divide the given array into two equal size arrays each time. Then we get a left array and a right array. The inversions of a pair of nodes can be the following situations: 
 1. Both nodes are in the left array.

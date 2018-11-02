@@ -4,7 +4,7 @@ key: 20180920
 tags: 
   - Data Structure
 ---
-As we know, the Hashmap is implemented by a bucket of linked lists or red-black trees. However, when you look into the source code of Hashmap in Java 8, there are interesting comments on attributes related to the size of bucket, e.g. *DEFAULT_INITIAL_CAPACITY* and *MAXIMUM_CAPACITY*. It is said these values **MUST be a power of two**.
+As we know, the Hashmap is implemented by a bucket of linked lists or red-black trees. However, when we look into the source code of Hashmap in Java 8, there are interesting comments on attributes related to the size of bucket, e.g. *DEFAULT_INITIAL_CAPACITY* and *MAXIMUM_CAPACITY*. It is said these values **MUST be a power of two**.
 
 So, what's the reason that the bucket size of a Hashmap has to be a number, which is power of two? 
 
