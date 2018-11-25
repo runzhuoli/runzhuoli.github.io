@@ -2,6 +2,7 @@
 title: Tig - a great partner of git
 key: 20181108
 mermaid: true
+comment: true
 tags: 
   - Git
 ---
