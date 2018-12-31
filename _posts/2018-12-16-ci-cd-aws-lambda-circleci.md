@@ -3,7 +3,7 @@ title: Create CI/CD pipeline for AWS Lambda with CircleCI 2.0
 key: 20181216
 tags: 
   - AWS
-  - Devops
+  - DevOps
 ---
 Nowadays, CI/CD is one of the minimum requirements of any kinds of software development projects. In this article, I am going to show how to build a CI/CD pipeline for AWS Lambda functions with CircleCI 2.0. We could apply the similar approach to deploy AWS services as well.
 
@@ -15,7 +15,7 @@ To start create the pipeline, we need the following resource:
 2. A Github or Bitbucket account.
 3. A CircleCI account, which usually login through Github or Bitbucket.
 4. A Lambda Function in AWS.
-5. Source code for the Lambda Function (my example is a java based AWS Lambda Function which is triggered by my Alexa Skill Kit).
+5. The Source code of the Lambda Function (my example is a java based AWS Lambda Function which is triggered by an Alexa Skill Kit).
 
 Now let's start to create our CI/CD pipeline from scratch. 
 
