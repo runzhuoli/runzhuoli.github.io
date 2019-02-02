@@ -72,6 +72,7 @@ ${GCLOUD} config set project ${GCLOUD_PROJECT}
 - Third, set up `config.yml` file in ".circleci" folder and add a deploy job as below:
 
 ```yaml
+{% raw %}
   deploy:
     docker:
       - image: circleci/openjdk:8-jdk-node-browsers
@@ -87,6 +88,7 @@ ${GCLOUD} config set project ${GCLOUD_PROJECT}
           paths:
             - ~/google-cloud-sdk
             - ~/.m2
+{% endraw %}
 ```
 
 Now, when we push any changes to our git repository, our code will be built by CircleCI and deploy to GAE automatically. 

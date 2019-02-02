@@ -7,7 +7,7 @@ titles:
   zh-Hans: 关于我
   zh-Hant: 關於我
 ---
-A software engineer, who are dreaming to make a small change to the world.   
+A software engineer, who is dreaming to make a small change to the world.   
 
 ## Experience
 
