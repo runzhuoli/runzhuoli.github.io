@@ -1,10 +1,11 @@
 ---
-title: Leetcode Sting/Substring Problems
+title: Leetcode String/Substring Problems
 key: 20181221
 tags: 
   - Leetcode
   - Interview
 ---
+When asked string related problems, we usually represent string in another data structure such as array or hashmap. The frequency, last index or index lists are common used as the values in array or hashmap. Sliding window is an very useful algorithm to solve these problems. Sometime, we could split the string in to many substring by using divide and conquer approach to solve the problem. In most case, string related problems have an O(n) solution.
 
 <!--more-->
 
