@@ -34,9 +34,14 @@ titles:
 ||| Seine |
 ||| Effeil Tower |
 | 09.05 | Geneva | _Manotel Royal_ | Hotwire
+||| Broken Chair |
+||| The Geneva Water Fountain |
+||| Brunswick Monument |
 | 09.06 | Grindelwald | _Hotel Glacier_ | Offical Website
-| 09.07 |
-| 09.08 | Brengstock | _Palace Hotel_ | Hotels
-| 09.09 | Lucerne |
-| 09.10 | Zurich |
+||| [Paragliding](https://www.paragliding-jungfrau.ch/wp/){:target="\_blank"} | Book 2d in advance
+| 09.07 || Jungfrau |
+| 09.08 | Burgenstock | _Palace Hotel_ | Hotels
+| 09.09 | Lucerne | Pilatus |
+| 09.10 | Zurich | _Movenpick Hotel Zurich Airport_ | Hotwire
+||| Bahnhofstrasse |
 | 09.11 | | [AC879](https://uk.flightaware.com/live/flight/ACA879){:target="\_blank"} (9:40AM - 12:10PM)
