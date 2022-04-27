@@ -15,12 +15,12 @@ tags:
         if(nums == null || nums.length == 0){
             return -1;
         }
-        int left =0, right = nums.length;
-        while(left < right){
-            int middle = left + (right - left)/2;
+        int left =0, right = nums.length - 1;
+        while(left <= right){
+            int middle = (left + right) / 2;
             if(nums[middle] == target) return middle; //f(x)
             if(nums[middle] > target){ // g(x)
-                right = middle;
+                right = middle - 1;
             } else{
                 left = middle + 1;
             }
